@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja R | Web Developer & Production Shopify Engineer | Portfolio</title>
+    <meta name="description" content="Portfolio of Pooja R, Web Developer based in Bengaluru, India. Specialized in production Shopify e-commerce development, Shopify Liquid, JavaScript, HTML, CSS, SEO, Python & AWS.">
+    <meta name="keywords" content="Pooja R, Web Developer, Shopify Developer, Bengaluru, India, Stonesoup.in, Shopify Liquid, SEO, Frontend Engineer">
+    <meta name="author" content="Pooja R">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Pooja R | Web Developer & Production Shopify Engineer">
+    <meta property="og:description" content="Building responsive, production-ready web experiences with Shopify, JavaScript, HTML, CSS, SEO and modern web technologies.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pooja147348.github.io/portfolio/">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for clean UI accents -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Custom Glowing Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Atmospheric Background Lighting & Particles -->
+    <div class="cinematic-bg">
+        <div class="light-spot spot-1"></div>
+        <div class="light-spot spot-2"></div>
+        <div class="light-spot spot-3"></div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo-link">
+                <div class="logo-box">
+                    <span class="logo-text">PR</span>
+                    <span class="logo-dot"></span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link"><span class="nav-num">01.</span> ABOUT</a>
+                <a href="#experience" class="nav-link"><span class="nav-num">02.</span> EXPERIENCE</a>
+                <a href="#projects" class="nav-link"><span class="nav-num">03.</span> PROJECTS</a>
+                <a href="#skills" class="nav-link"><span class="nav-num">04.</span> SKILLS</a>
+                <a href="#education" class="nav-link"><span class="nav-num">05.</span> EDUCATION</a>
+                <a href="#contact" class="nav-link"><span class="nav-num">06.</span> CONTACT</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="#contact" class="btn btn-gold-nav">
+                    <span>LET'S TALK</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Scroll Container -->
+    <main>
+        <!-- HERO SECTION: 3D DEVELOPER SHOWCASE HERO -->
+        <section class="section hero-section" id="hero">
+            <div class="container hero-container">
+                <!-- Left Column: Hero Portfolio Text & CTAs -->
+                <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="pulse-dot"></span>
+                        <span>OPEN TO WORK</span>
+                    </div>
+
+                    <div class="decorative-script-wrapper">
+                        <span class="decorative-script">The portfolio</span>
+                        <div class="gold-line"></div>
+                    </div>
+
+                    <h1 class="hero-name" id="heroName">
+                        <span class="char-reveal">P</span><span class="char-reveal">O</span><span class="char-reveal">O</span><span class="char-reveal">J</span><span class="char-reveal">A</span> 
+                        <span class="char-reveal gold-text">R</span>
+                    </h1>
+
+                    <div class="hero-title-badge">
+                        <h2 class="hero-title">WEB DEVELOPER</h2>
+                        <span class="title-loc"><i class="fa-solid fa-location-dot"></i> BENGALURU, INDIA</span>
+                    </div>
+
+                    <p class="hero-subtitle">
+                        Building responsive, production-ready web experiences with Shopify, JavaScript, HTML, CSS, SEO and modern web technologies.
+                    </p>
+
+                    <div class="hero-skills-pills">
+                        <span class="skill-pill"><i class="fa-solid fa-bag-shopping"></i> SHOPIFY</span>
+                        <span class="skill-pill"><i class="fa-solid fa-code"></i> LIQUID</span>
+                        <span class="skill-pill"><i class="fa-brands fa-js"></i> JAVASCRIPT</span>
+                        <span class="skill-pill"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-pill"><i class="fa-solid fa-magnifying-glass"></i> SEO</span>
+                        <span class="skill-pill"><i class="fa-brands fa-python"></i> PYTHON</span>
+                        <span class="skill-pill"><i class="fa-brands fa-aws"></i> AWS</span>
+                    </div>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-gold-primary">
+                            <span>VIEW PROJECTS</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-glass-secondary">
+                            <span>CONTACT ME</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: 3D Developer Character Showcase Frame -->
+                <div class="hero-character-wrapper">
+                    <div class="character-glow-effect"></div>
+                    <div class="character-frame glass-panel">
+                        <img src="./developer_girl_3d.png" alt="3D Female Developer Character Showcase - Pooja R" class="character-img">
+                        <div class="character-overlay-hud">
+                            <span class="hud-badge"><i class="fa-solid fa-laptop-code"></i> DEVELOPER PORTFOLIO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / WHO I AM SECTION -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-label-group">
+                    <span class="section-number">01</span>
+                    <span class="section-tag">WHO I AM</span>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-main-card glass-panel">
+                        <div class="card-header-meta">
+                            <span class="meta-badge"><i class="fa-solid fa-laptop-code"></i> WEB DEVELOPER</span>
+                            <span class="meta-badge"><i class="fa-solid fa-location-pin"></i> BENGALURU, INDIA</span>
+                        </div>
+
+                        <h2 class="about-heading">
+                            Crafting Production-Grade Shopify E-Commerce Platforms & Modern Web Solutions
+                        </h2>
+
+                        <div class="about-text-content">
+                            <p>
+                                I am a dedicated <strong>Web Developer</strong> with hands-on experience designing, developing, and deploying production Shopify e-commerce websites, including the live <a href="https://stonesoup.in" target="_blank" rel="noopener" class="inline-link">Stonesoup.in</a> platform.
+                            </p>
+                            <p>
+                                My expertise spans custom Shopify Liquid theme development, high-converting landing page creation, product catalog architecture, and end-to-end performance optimization. I bridge technical frontend engineering with business growth by implementing technical & on-page SEO, Core Web Vitals optimizations, and tracking infrastructure using Google Analytics 4 (GA4), Google Tag Manager (GTM), and Meta Pixel.
+                            </p>
+                        </div>
+
+                        <div class="about-strengths-grid">
+                            <div class="strength-card">
+                                <div class="strength-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                                <h4>Shopify & E-Commerce</h4>
+                                <p>Liquid theme development, custom layouts, app integration & catalog setup.</p>
+                            </div>
+                            <div class="strength-card">
+                                <div class="strength-icon"><i class="fa-solid fa-code"></i></div>
+                                <h4>Frontend Web Stack</h4>
+                                <p>Clean HTML5, modern CSS3, responsive layouts, and interactive JavaScript.</p>
+                            </div>
+                            <div class="strength-card">
+                                <div class="strength-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <h4>SEO & Analytics</h4>
+                                <p>Technical SEO, Core Web Vitals, Structured Data, GA4, GTM & Meta Pixel.</p>
+                            </div>
+                            <div class="strength-card">
+                                <div class="strength-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <h4>Python & Cloud</h4>
+                                <p>Python automation workflows, Streamlit AI tooling, Docker & AWS deployments.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-quick-stats">
+                        <div class="quick-info-card glass-panel">
+                            <div class="info-row">
+                                <span class="label">LOCATION</span>
+                                <span class="val">Bengaluru, KA, India</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">PRIMARY ROLE</span>
+                                <span class="val">Web Developer</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">FLAGSHIP LIVE SITE</span>
+                                <span class="val"><a href="https://stonesoup.in" target="_blank" rel="noopener" class="gold-link">Stonesoup.in <i class="fa-solid fa-arrow-up-right-from-square"></i></a></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">EMAIL</span>
+                                <span class="val"><a href="mailto:poojarudrappa123@gmail.com" class="val-link">poojarudrappa123@gmail.com</a></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">PHONE</span>
+                                <span class="val">+91 8310031549</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label">DEGREE</span>
+                                <span class="val">B.E. ISE (2021 – 2025)</span>
+                            </div>
+                        </div>
+
+                        <div class="status-box glass-panel">
+                            <div class="status-indicator">
+                                <span class="status-dot"></span>
+                                <span>OPEN FOR OPPORTUNITIES</span>
+                            </div>
+                            <p>Available for Web Developer & E-Commerce Engineering roles in Bengaluru or Remote.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-label-group">
+                    <span class="section-number">02</span>
+                    <span class="section-tag">CAREER PATH</span>
+                    <div class="section-line"></div>
+                </div>
+
+                <h2 class="section-title-large">EXPERIENCE</h2>
+
+                <div class="timeline-wrapper">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item flagship-experience">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+
+                        <div class="timeline-content glass-panel">
+                            <div class="experience-header">
+                                <div>
+                                    <span class="exp-badge">CURRENT PRODUCTION ROLE</span>
+                                    <h3 class="exp-role">Web Developer</h3>
+                                    <h4 class="exp-company">A a d i t i — <a href="https://stonesoup.in" target="_blank" rel="noopener" class="company-link">Stonesoup.in</a></h4>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date"><i class="fa-regular fa-calendar"></i> Feb 2026 – Present</span>
+                                    <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                                </div>
+                            </div>
+
+                            <div class="exp-highlight-box">
+                                <i class="fa-solid fa-star gold-icon"></i>
+                                <span><strong>Core Highlight:</strong> Production Shopify Development & End-to-End E-Commerce Engineering</span>
+                            </div>
+
+                            <ul class="exp-bullet-list">
+                                <li><strong>End-to-End Shopify Development:</strong> Executed end-to-end development, testing, and production deployment of the live <a href="https://stonesoup.in" target="_blank" rel="noopener" class="inline-link">Stonesoup.in</a> Shopify e-commerce platform.</li>
+                                <li><strong>Theme & Code Customization:</strong> Developed custom code using Shopify Liquid, HTML, CSS, and JavaScript for tailored Shopify theme customization and conversion-focused landing pages.</li>
+                                <li><strong>Catalog & App Integration:</strong> Managed complete product catalog setups and integrated third-party Shopify applications to expand store functionality.</li>
+                                <li><strong>Technical & On-Page SEO:</strong> Implemented structured data, meta tags, sitemap optimization, and technical SEO fixes to boost organic search rankings.</li>
+                                <li><strong>Performance & Web Vitals:</strong> Optimized Core Web Vitals, improved mobile responsiveness, and enhanced page load speed.</li>
+                                <li><strong>Analytics & Tracking Setup:</strong> Configured Google Search Console, Google Analytics 4 (GA4), Google Tag Manager (GTM), and Meta Pixel for user tracking and conversion flow optimization.</li>
+                                <li><strong>AI Application Testing:</strong> Tested and validated the <em>Eco-Cycle application</em> built with Google AI Studio.</li>
+                            </ul>
+
+                            <div class="tech-pills-row">
+                                <span class="tech-pill">Shopify</span>
+                                <span class="tech-pill">Shopify Liquid</span>
+                                <span class="tech-pill">JavaScript</span>
+                                <span class="tech-pill">HTML5/CSS3</span>
+                                <span class="tech-pill">Technical SEO</span>
+                                <span class="tech-pill">GA4</span>
+                                <span class="tech-pill">GTM</span>
+                                <span class="tech-pill">Meta Pixel</span>
+                                <span class="tech-pill">Google AI Studio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-line"></div>
+                        </div>
+
+                        <div class="timeline-content glass-panel">
+                            <div class="experience-header">
+                                <div>
+                                    <span class="exp-badge badge-intern">INTERNSHIP</span>
+                                    <h3 class="exp-role">Application Developer Intern</h3>
+                                    <h4 class="exp-company">Rooman Technologies</h4>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date"><i class="fa-regular fa-calendar"></i> Sep 2024 – Feb 2025</span>
+                                    <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                                </div>
+                            </div>
+
+                            <div class="exp-highlight-box">
+                                <i class="fa-solid fa-terminal gold-icon"></i>
+                                <span><strong>Core Highlight:</strong> Prompt Engineering, AWS DevOps & Containerized Python Systems</span>
+                            </div>
+
+                            <ul class="exp-bullet-list">
+                                <li>Leveraged Prompt Engineering and AI coding assistants to accelerate application development and data analytics workflows.</li>
+                                <li>Worked with AWS DevOps pipelines, CI/CD automated deployments, and Docker containerized environments.</li>
+                                <li>Built core application modules using Python, utilizing Multithreading, Object-Oriented Programming (OOP), and Python Collections.</li>
+                            </ul>
+
+                            <div class="tech-pills-row">
+                                <span class="tech-pill">Prompt Engineering</span>
+                                <span class="tech-pill">AWS DevOps</span>
+                                <span class="tech-pill">Docker</span>
+                                <span class="tech-pill">CI/CD</span>
+                                <span class="tech-pill">Python</span>
+                                <span class="tech-pill">OOP</span>
+                                <span class="tech-pill">Data Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                        </div>
+
+                        <div class="timeline-content glass-panel">
+                            <div class="experience-header">
+                                <div>
+                                    <span class="exp-badge badge-intern">INTERNSHIP</span>
+                                    <h3 class="exp-role">Python (AIML) Intern</h3>
+                                    <h4 class="exp-company">Dotch Endeavours Pvt. Ltd.</h4>
+                                </div>
+                                <div class="exp-meta">
+                                    <span class="exp-date"><i class="fa-regular fa-calendar"></i> Oct 2023 – Nov 2023</span>
+                                    <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+                                </div>
+                            </div>
+
+                            <div class="exp-highlight-box">
+                                <i class="fa-solid fa-gears gold-icon"></i>
+                                <span><strong>Core Highlight:</strong> Python Automation & Data Processing Workflows</span>
+                            </div>
+
+                            <ul class="exp-bullet-list">
+                                <li>Developed Python automation scripts and structured data processing pipelines for real-world tasks.</li>
+                                <li>Utilized ML-adjacent Python libraries to automate data extraction, cleaning, and reporting tasks.</li>
+                            </ul>
+
+                            <div class="tech-pills-row">
+                                <span class="tech-pill">Python Automation</span>
+                                <span class="tech-pill">Data Workflows</span>
+                                <span class="tech-pill">ML Libraries</span>
+                                <span class="tech-pill">Data Extraction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-label-group">
+                    <span class="section-number">03</span>
+                    <span class="section-tag">FEATURED WORK</span>
+                    <div class="section-line"></div>
+                </div>
+
+                <h2 class="section-title-large">FEATURED PROJECTS</h2>
+
+                <!-- FLAGSHIP PROJECT 1: STONESOUP.IN (REAL HOMEPAGE SCREENSHOT) -->
+                <div class="project-card flagship-card">
+                    <div class="project-grid">
+                        <div class="project-media">
+                            <div class="media-window-frame">
+                                <div class="window-bar">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                    <span class="url-title">stonesoup.in</span>
+                                </div>
+                                <div class="image-wrapper">
+                                    <img src="./stonesoup.jpg" alt="Real Stonesoup.in Production Website Homepage Screenshot" class="project-img">
+                                    <div class="hover-overlay">
+                                        <a href="https://stonesoup.in" target="_blank" rel="noopener" class="btn btn-gold-primary">
+                                            <span>VISIT LIVE WEBSITE</span>
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-header-tag">
+                                <span class="tag-flagship"><i class="fa-solid fa-certificate"></i> REAL LIVE PRODUCTION WEBSITE</span>
+                                <span class="tag-domain">STONESOUP.IN</span>
+                            </div>
+
+                            <h3 class="project-title">STONESOUP.IN</h3>
+                            <h4 class="project-subtitle">Production Shopify E-Commerce Platform</h4>
+
+                            <p class="project-description">
+                                End-to-end development, testing, optimization, and production deployment of a live Shopify e-commerce website. Built to deliver a smooth, high-converting shopping experience for eco-conscious products.
+                            </p>
+
+                            <div class="project-tech-tags">
+                                <span>SHOPIFY</span>
+                                <span>SHOPIFY LIQUID</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JAVASCRIPT</span>
+                                <span>SEO</span>
+                                <span>GA4</span>
+                                <span>GTM</span>
+                                <span>META PIXEL</span>
+                            </div>
+
+                            <div class="project-feature-list">
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> Shopify Theme Customization & Liquid Code</div>
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> High-Converting Custom Landing Pages</div>
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> Product Catalog Architecture & Apps</div>
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> Technical & On-Page SEO (Meta Tags, Sitemaps)</div>
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> Core Web Vitals & Speed Optimization</div>
+                                <div class="feature-item"><i class="fa-solid fa-check gold-check"></i> GA4, GTM & Meta Pixel Analytics Tracking</div>
+                            </div>
+
+                            <div class="project-action">
+                                <a href="https://stonesoup.in" target="_blank" rel="noopener" class="btn btn-gold-primary">
+                                    <span>VISIT LIVE WEBSITE</span>
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDARY PROJECTS GRID -->
+                <div class="secondary-projects-grid">
+                    <!-- Project 2: GemNet AI -->
+                    <div class="project-card secondary-card glass-panel">
+                        <div class="project-header-tag">
+                            <span class="tag-secondary"><i class="fa-solid fa-brain"></i> AI APPLICATION</span>
+                        </div>
+
+                        <div class="card-visual-mock ai-mock">
+                            <div class="mock-header">
+                                <span class="mock-dot"></span>
+                                <span>GemNet AI Studio</span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="ai-node-visualization">
+                                    <div class="node n1"><i class="fa-solid fa-file-lines"></i> NLP Text Processing</div>
+                                    <div class="node-line"></div>
+                                    <div class="node n2"><i class="fa-solid fa-eye"></i> Computer Vision</div>
+                                    <div class="node-line"></div>
+                                    <div class="node n3"><i class="fa-solid fa-bolt"></i> Automation Engine</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">GemNet AI</h3>
+                        <h4 class="project-subtitle">Productivity Support Application</h4>
+
+                        <p class="project-description">
+                            An AI-powered productivity application integrating Natural Language Processing (NLP) and Computer Vision for intelligent productivity automation and workflow optimization.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span>PYTHON</span>
+                            <span>STREAMLIT</span>
+                            <span>NLP</span>
+                            <span>COMPUTER VISION</span>
+                            <span>AI</span>
+                        </div>
+
+                        <ul class="project-mini-specs">
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Text processing & structured document extraction</li>
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Image analysis & visual recognition models</li>
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Modular Python backend architecture & testing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3: News Notifier -->
+                    <div class="project-card secondary-card glass-panel">
+                        <div class="project-header-tag">
+                            <span class="tag-secondary"><i class="fa-solid fa-network-wired"></i> DATA PIPELINE</span>
+                        </div>
+
+                        <div class="card-visual-mock pipeline-mock">
+                            <div class="mock-header">
+                                <span class="mock-dot"></span>
+                                <span>Airflow DAG Dashboard</span>
+                            </div>
+                            <div class="mock-content">
+                                <div class="pipeline-diagram">
+                                    <div class="pipe-step"><i class="fa-solid fa-cloud-arrow-down"></i> API Ingestion</div>
+                                    <div class="pipe-arrow">➔</div>
+                                    <div class="pipe-step"><i class="fa-solid fa-gears"></i> Airflow DAG</div>
+                                    <div class="pipe-arrow">➔</div>
+                                    <div class="pipe-step"><i class="fa-brands fa-docker"></i> Docker</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">News Notifier</h3>
+                        <h4 class="project-subtitle">Data Engineering Pipeline</h4>
+
+                        <p class="project-description">
+                            An end-to-end Python pipeline for real-time news ingestion and automated processing with Apache Airflow workflow orchestration and Docker containerization.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span>PYTHON</span>
+                            <span>APACHE AIRFLOW</span>
+                            <span>DOCKER</span>
+                            <span>APIs</span>
+                        </div>
+
+                        <ul class="project-mini-specs">
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Real-time news ingestion & REST API integration</li>
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Airflow DAG scheduling, retry handling & failure management</li>
+                            <li><i class="fa-solid fa-chevron-right gold-chevron"></i> Containerized Docker execution & data quality validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-label-group">
+                    <span class="section-number">04</span>
+                    <span class="section-tag">CAPABILITIES</span>
+                    <div class="section-line"></div>
+                </div>
+
+                <h2 class="section-title-large">TECHNICAL ARSENAL</h2>
+
+                <!-- Ticker marquee of top tech -->
+                <div class="skills-marquee-wrapper">
+                    <div class="marquee-track">
+                        <span>SHOPIFY LIQUID</span> <span class="star">✦</span>
+                        <span>JAVASCRIPT</span> <span class="star">✦</span>
+                        <span>HTML5 & CSS3</span> <span class="star">✦</span>
+                        <span>TECHNICAL SEO</span> <span class="star">✦</span>
+                        <span>PYTHON</span> <span class="star">✦</span>
+                        <span>CORE WEB VITALS</span> <span class="star">✦</span>
+                        <span>AWS & DOCKER</span> <span class="star">✦</span>
+                        <span>GA4 & GTM</span> <span class="star">✦</span>
+                        <span>SHOPIFY LIQUID</span> <span class="star">✦</span>
+                        <span>JAVASCRIPT</span> <span class="star">✦</span>
+                        <span>HTML5 & CSS3</span> <span class="star">✦</span>
+                        <span>TECHNICAL SEO</span> <span class="star">✦</span>
+                    </div>
+                </div>
+
+                <!-- Skill Category Filter -->
+                <div class="skills-filter-nav">
+                    <button class="skill-tab active" data-cat="all">ALL SKILLS</button>
+                    <button class="skill-tab" data-cat="web">LANGUAGES & WEB</button>
+                    <button class="skill-tab" data-cat="shopify">SHOPIFY & SEO</button>
+                    <button class="skill-tab" data-cat="tools">TOOLS & FRAMEWORKS</button>
+                    <button class="skill-tab" data-cat="cloud">CLOUD & DEVOPS</button>
+                    <button class="skill-tab" data-cat="concepts">CORE CONCEPTS</button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Languages & Web -->
+                    <div class="skill-card glass-panel" data-category="web">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-code skill-icon"></i>
+                            <h3>Languages & Web</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-item-tag">Python</span>
+                            <span class="skill-item-tag">JavaScript</span>
+                            <span class="skill-item-tag">HTML5</span>
+                            <span class="skill-item-tag">CSS3</span>
+                            <span class="skill-item-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Shopify & SEO -->
+                    <div class="skill-card glass-panel highlight-skill-card" data-category="shopify">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-bag-shopping skill-icon gold-icon"></i>
+                            <h3>Shopify & SEO</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-item-tag gold-tag">Shopify Development</span>
+                            <span class="skill-item-tag gold-tag">Theme Customization</span>
+                            <span class="skill-item-tag gold-tag">Shopify Liquid</span>
+                            <span class="skill-item-tag">On-Page SEO</span>
+                            <span class="skill-item-tag">Technical SEO</span>
+                            <span class="skill-item-tag">Core Web Vitals</span>
+                            <span class="skill-item-tag">Structured Data</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Frameworks -->
+                    <div class="skill-card glass-panel" data-category="tools">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-toolbox skill-icon"></i>
+                            <h3>Tools & Frameworks</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-item-tag">Streamlit</span>
+                            <span class="skill-item-tag">Apache Airflow</span>
+                            <span class="skill-item-tag">Docker</span>
+                            <span class="skill-item-tag">Emergent</span>
+                            <span class="skill-item-tag">Pandas</span>
+                            <span class="skill-item-tag">Git</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-card glass-panel" data-category="cloud">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-cloud skill-icon"></i>
+                            <h3>Cloud & DevOps</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-item-tag">AWS</span>
+                            <span class="skill-item-tag">Google Cloud Platform</span>
+                            <span class="skill-item-tag">CI/CD Pipelines</span>
+                            <span class="skill-item-tag">Containerisation</span>
+                        </div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-card glass-panel" data-category="concepts">
+                        <div class="skill-card-header">
+                            <i class="fa-solid fa-layer-group skill-icon"></i>
+                            <h3>Core Concepts</h3>
+                        </div>
+                        <div class="skill-items">
+                            <span class="skill-item-tag">Data Structures</span>
+                            <span class="skill-item-tag">OOP</span>
+                            <span class="skill-item-tag">REST APIs</span>
+                            <span class="skill-item-tag">Automation</span>
+                            <span class="skill-item-tag">Debugging</span>
+                            <span class="skill-item-tag">Agile Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION & CERTIFICATIONS SECTION -->
+        <section class="section edu-section" id="education">
+            <div class="container">
+                <div class="section-label-group">
+                    <span class="section-number">05</span>
+                    <span class="section-tag">BACKGROUND</span>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="edu-grid">
+                    <!-- Education Column -->
+                    <div class="edu-col">
+                        <h2 class="sub-heading"><i class="fa-solid fa-graduation-cap gold-icon"></i> EDUCATION</h2>
+
+                        <div class="edu-card glass-panel">
+                            <div class="edu-degree">B.E. — Information Science & Engineering</div>
+                            <div class="edu-inst">Vemana Institute of Technology, Bengaluru</div>
+                            <div class="edu-meta">
+                                <span>Dec 2021 – Jun 2025</span>
+                                <span class="score-badge">CGPA: 7.13</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card glass-panel">
+                            <div class="edu-degree">Pre-University Education</div>
+                            <div class="edu-inst">Swamy Vivekananda PU College, Bengaluru</div>
+                            <div class="edu-meta">
+                                <span>Jun 2019 – Jul 2021</span>
+                                <span class="score-badge">69.5%</span>
+                            </div>
+                        </div>
+
+                        <div class="edu-card glass-panel">
+                            <div class="edu-degree">Secondary School Education</div>
+                            <div class="edu-inst">Shams High School, Bengaluru</div>
+                            <div class="edu-meta">
+                                <span>May 2018 – Apr 2019</span>
+                                <span class="score-badge">77.44%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="cert-col">
+                        <h2 class="sub-heading"><i class="fa-solid fa-award gold-icon"></i> CERTIFICATIONS</h2>
+
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="cert-info">
+                                <h4>Application Web Development</h4>
+                                <p>Rooman Technologies</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="cert-info">
+                                <h4>Python (AIML)</h4>
+                                <p>Dotch Endeavours</p>
+                            </div>
+                        </div>
+
+                        <div class="cert-card glass-panel">
+                            <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div class="cert-info">
+                                <h4>Economic Development Through Skilling</h4>
+                                <p>Wadhwani Foundation</p>
+                            </div>
+                        </div>
+
+                        <!-- Resume Download Quick Card -->
+                        <div class="resume-download-box glass-panel">
+                            <div class="res-icon"><i class="fa-solid fa-file-pdf gold-icon"></i></div>
+                            <div class="res-text">
+                                <h4>Pooja R — Resume</h4>
+                                <p>Verified Web Developer & Production Shopify Resume</p>
+                            </div>
+                            <button type="button" class="btn btn-gold-nav" id="requestResumeBtn">
+                                <span>REQUEST RESUME</span>
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card-hero glass-panel">
+                    <div class="contact-lighting"></div>
+
+                    <span class="contact-script">Let's Connect</span>
+                    <h2 class="contact-title">LET'S BUILD SOMETHING</h2>
+                    <p class="contact-subtitle">Have a project, opportunity, or idea? Let's connect.</p>
+
+                    <div class="contact-channels-grid">
+                        <a href="mailto:poojarudrappa123@gmail.com" class="channel-card">
+                            <div class="ch-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="ch-label">EMAIL</div>
+                            <div class="ch-val">poojarudrappa123@gmail.com</div>
+                        </a>
+
+                        <a href="tel:8310031549" class="channel-card">
+                            <div class="ch-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="ch-label">PHONE</div>
+                            <div class="ch-val">+91 8310031549</div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/poojar29" target="_blank" rel="noopener" class="channel-card">
+                            <div class="ch-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="ch-label">LINKEDIN</div>
+                            <div class="ch-val">linkedin.com/in/poojar29</div>
+                        </a>
+
+                        <a href="https://github.com/Pooja147348" target="_blank" rel="noopener" class="channel-card">
+                            <div class="ch-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="ch-label">GITHUB</div>
+                            <div class="ch-val">github.com/Pooja147348</div>
+                        </a>
+                    </div>
+
+                    <div class="contact-ctas">
+                        <a href="mailto:poojarudrappa123@gmail.com" class="btn btn-gold-primary btn-large">
+                            <span>GET IN TOUCH</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <a href="https://github.com/Pooja147348" target="_blank" rel="noopener" class="btn btn-glass-secondary btn-large">
+                            <span>VIEW GITHUB</span>
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">PR</span>
+                <span>© 2026 POOJA R — WEB DEVELOPER. BENGALURU, INDIA.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#hero" class="back-to-top">
+                    <span>BACK TO TOP</span>
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- RESUME & CONTACT MODAL -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal-card glass-panel">
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Modal">&times;</button>
+
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fa-solid fa-file-pdf gold-icon"></i></div>
+                <div>
+                    <h3 class="modal-title">Pooja R — Resume & Contact</h3>
+                    <p class="modal-subtitle">Web Developer & Production Shopify Engineer • Bengaluru, KA</p>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="resume-quick-view">
+                    <div class="view-section">
+                        <h4><i class="fa-solid fa-star gold-icon"></i> Current Production Experience</h4>
+                        <p><strong>Web Developer @ A a d i t i (Stonesoup.in)</strong> — End-to-end Shopify development, Liquid customization, Technical SEO, Core Web Vitals, and GA4/GTM analytics.</p>
+                    </div>
+                    <div class="view-section">
+                        <h4><i class="fa-solid fa-graduation-cap gold-icon"></i> Education & Degree</h4>
+                        <p><strong>B.E. Information Science & Engineering</strong> (2021 – 2025) — Vemana Institute of Technology, Bengaluru (CGPA: 7.13)</p>
+                    </div>
+                </div>
+
+                <div class="modal-actions-grid">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=poojarudrappa123@gmail.com&su=Resume%20Request%20-%20Pooja%20R" target="_blank" rel="noopener" class="btn btn-gold-primary">
+                        <i class="fa-brands fa-google"></i>
+                        <span>EMAIL VIA GMAIL</span>
+                    </a>
+                    <button type="button" class="btn btn-glass-secondary" id="copyEmailBtn">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copyEmailText">COPY EMAIL ADDRESS</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
